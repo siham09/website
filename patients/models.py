@@ -11,8 +11,8 @@ class Temp_Data(models.Model):
 
 class Pulse_Data(models.Model):
     name = models.CharField(max_length=100)
-#    initial = models.FloatField()
     hRate = models.FloatField()
+#    initial = models.FloatField()
 #    times = models.IntegerField()
 
     def __str__(self):
