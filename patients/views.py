@@ -1,4 +1,5 @@
 # from django.shortcuts import get_object_or_404
+from django.db.models import Model
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -7,6 +8,10 @@ from .serializers import Temp_DataSerializer
 from .models import Pulse_Data
 from .serializers import Pulse_DataSerializer
 from django.http import Http404
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("<h1>Welcome to T2HM ♥ (｡◕‿◕｡) ♥</h1>")
 
 # Lists all Temp_Data or create a new one
 # temp_data/
