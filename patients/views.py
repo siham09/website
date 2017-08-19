@@ -11,7 +11,7 @@ from django.http import Http404
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("<h1>Welcome to T2HM ♥ (｡◕‿◕｡) ♥</h1>")
+    return HttpResponse("<h1>Welcome to T2HM</h1>")
 
 # Lists all Temp_Data or create a new one
 # temp_data/
